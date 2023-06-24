@@ -38,6 +38,18 @@
 .center-section,
 .right-section {
   padding: 20px;
+  text-align: justify;
+}
+
+left-section,
+.right-section {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.center-section {
+  background-color: #e6e6e6;
+  box-sizing: border-box;
 }
 
 /* Estilos para dispositivos móviles */
@@ -51,4 +63,106 @@
 
 section {
   margin-top: 100px;
+  display: flex;
+}
+
+.latest-users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.user img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user h4 {
+  margin-bottom: 5px;
+}
+
+.user p {
+  margin-bottom: 5px;
+}
+
+.user ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user li {
+  margin-bottom: 5px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Mostrar 3 tarjetas de usuario por fila */
+  gap: 20px; /* Espacio entre las tarjetas de usuario */
+}
+
+.user-card {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-skills {
+  font-style: italic;
+  color: #888;
+}
+
+.version-final h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.version-final p {
+  margin-bottom: 10px;
+}
+
+.version-final ul {
+  margin-bottom: 20px;
+}
+
+.version-final li {
+  margin-bottom: 5px;
+}
+
+.version-final join-link {
+  padding: 10px 20px;
+  font-size: 16px;
 }

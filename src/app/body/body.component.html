@@ -72,14 +72,14 @@
               <input type="text" class="form-control" id="twitterLink" name="twitterLink" [(ngModel)]="redesSocialesLinks['twitter']" placeholder="Ingrese el enlace de Twitter" *ngIf="redesSociales.twitter">
             </div>
           </div>
-
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <br>
+          <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
         </form>
       </div>
       <div class="col-md-4 center-section">
         <h3>Ingresar habilidades</h3>
-        <form (ngSubmit)="submitHabilidadesForm()">
-          <div class="form-group">
+        <form (ngSubmit)="submitHabilidadesForm()" >
+          <div class="form-group" >
             <label for="habilidadesInput">Habilidades:</label>
             <input type="text" class="form-control" id="habilidadesInput" name="habilidadesInput" [(ngModel)]="nuevaHabilidad" placeholder="Ingrese sus habilidades">
           </div>
@@ -87,7 +87,8 @@
             <label for="herramientasInput">Herramientas:</label>
             <input type="text" class="form-control" id="herramientasInput" name="herramientasInput" [(ngModel)]="nuevaHerramienta" placeholder="Ingrese las herramientas que posee">
           </div>
-          <button type="submit" class="btn btn-primary">Agregar</button>
+          <br>
+          <button type="submit" class="btn btn-primary  btn-sm">Agregar</button>
         </form>
         <table *ngIf="habilidadesList.length > 0" class="table mt-4" >
           <thead>
@@ -104,6 +105,11 @@
           </tbody>
         </table>
       </div>
+      <div class="col-md-4 right-section" >
+        <img src="https://media.istockphoto.com/id/1428565727/es/vector/fecha-de-vacaciones-hora-del-planeta-ahorro-de-energ%C3%ADa-y-planeta-concepto-de-dise%C3%B1o-hora.jpg?s=612x612&w=0&k=20&c=5dPUq-T5HfLrit6n2ZBvMFkmjqk0s2dokv8AStiY398="
+        alt="Imagen referente al texto de la sección 1" class="img-fluid d-block"
+        style="max-width: 100%;">
+      </div>
     </div>
   </div>
 </section>
@@ -112,15 +118,69 @@
 <section id="section3">
   <div class="container">
     <div class="row">
-      <div class="col-md-4  left-section">
-        Contenido de la sección 3
+      <div class="col-md-4 left-section">
+        <h3>Búsqueda de usuarios</h3>
+        <div class="search-container">
+          <input type="text" class="form-control" id="searchInput" placeholder="Nombre o habilidad">
+          <br>
+          <button class="btn btn-primary btn-sm" id="searchButton">Buscar</button>
+        </div>
+        <h4>Resultados de búsqueda:</h4>
+        <div class="user-grid">
+          <div class="user-card">
+            <div class="user-name">Cristian Shueco</div>
+            <div class="user-skills">Desconocida</div>
+          </div>
+          <div class="user-card">
+            <div class="user-name">Marcos Riquelme</div>
+            <div class="user-skills">Cocinería, Lavandería</div>
+          </div>
+          <div class="user-card">
+            <div class="user-name">Jesus Roman</div>
+            <div class="user-skills">Electrico, Soldadura</div>
+          </div>
+          <!-- Agrega más tarjetas de usuario aquí -->
+        </div>
       </div>
       <div class="col-md-4 center-section">
-        Contenido de la sección 3 (principal)
+        <h3>Últimos Registros</h3>
+        <div class="latest-users">
+          <div class="user">
+            <h4>Humberto Ramos</h4>
+            <div class="skills-container skills-section  ">
+              <div class="skill">Mecánica Automotriz</div>
+              <div class="skill">Gasfitería</div>
+              <div class="skill">Panadería</div>
+            </div>
+          </div>
+          <div class="user">
+            <h4>Roberto Carlos</h4>
+            <div class="skills-container skills-section  ">
+              <div class="skill">Carpintería</div>
+              <div class="skill">Gasfitería</div>
+            </div>
+          </div>
+          <div class="user">
+            <h4>Juan Pedro</h4>
+            <div class="skills-container skills-section  ">
+              <div class="skill">Diseño gráfico</div>
+              <div class="skill">Programación</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4  right-section">
-        Contenido de la sección 3
-      </div>
+      <div class="col-md-4  right-section version-final">
+        <h3>¡Únete a nuestra comunidad!</h3>
+          <p>Descubre un mundo de oportunidades y conéctate con profesionales de diferentes habilidades.</p>
+          <p>Beneficios de unirte:</p>
+          <ul>
+            <li>Amplía tu red profesional.</li>
+            <li>Comparte y aprende nuevas habilidades.</li>
+            <li>Participa en proyectos interesantes.</li>
+            <li>Encuentra colaboradores para tus propias iniciativas.</li>
+          </ul>
+          <a href="#section2" class="join-link">Únete ahora</a>
+        </div>
     </div>
   </div>
 </section>
